@@ -5,3 +5,10 @@ body{
 .row{
 	border-style: solid;
 }
+.gif{
+	display: inline-block;
+	padding: 5px;
+}
+.rating{
+	text-align: center;
+}
