@@ -64,8 +64,10 @@ function gifClicked(){
 		$gif.attr("data-state","still");
 	}
 	if($lastGif){
-		$lastGif.attr("src", $lastGif.attr("data-stillURL"));
-		$lastGif.attr("data-state","still");
+		if($lastGif.attr("data-stillURL") != $gif.attr("data-stillURL")){
+			$lastGif.attr("src", $lastGif.attr("data-stillURL"));
+			$lastGif.attr("data-state","still");
+		}
 	}
 	$lastGif = $gif;
 }
