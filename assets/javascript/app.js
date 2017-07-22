@@ -64,9 +64,8 @@ function gifClicked(){
 		$gif.attr("data-state","still");
 	}
 	if($lastGif){
-		console.log($lastGif);
+		$lastGif.attr("src", $lastGif.attr("data-stillURL"));
+		$lastGif.attr("data-state","still");
 	}
-	else{
-		console.log("There isn't a last gif!");
-	}
+	$lastGif = $gif;
 }
